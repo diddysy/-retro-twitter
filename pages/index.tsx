@@ -2,7 +2,12 @@ import { useState, useEffect } from "react";
 import { createClient } from "@supabase/supabase-js";
 
 // Supabase init
-const supabase = createClient("https://pzxkzsuiakuulovaebhu.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6eGt6c3VpYWt1dWxvdmFlYmh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUzMzU2NTEsImV4cCI6MjA3MDkxMTY1MX0.a3HezuTISyMoC7fSisnE8e6RM6F_Jo-u-16pQ9v3Olk");
+const supabase = createClient(
+  process.env.https://pzxkzsuiakuulovaebhu.supabase.co,
+  process.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6eGt6c3VpYWt1dWxvdmFlYmh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUzMzU2NTEsImV4cCI6MjA3MDkxMTY1MX0.a3HezuTISyMoC7fSisnE8e6RM6F_Jo-u-16pQ9v3Olk
+);
+
+
 
 export default function RetroTwitter() {
   const [user, setUser] = useState(null);
